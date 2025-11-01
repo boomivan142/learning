@@ -60,3 +60,14 @@ buttonBurger.addEventListener('click', ()=>{
 btnCloseModal.addEventListener('click', ()=>{
     modalEl.style.display = 'none'
 })
+
+
+(function() {
+  const version = 'v2.0'; // измени при каждом обновлении
+  const link = document.querySelector('link[rel="stylesheet"][href*="style.css"]');
+  if (link) {
+    const url = new URL(link.href);
+    url.searchParams.set('v', version);
+    link.href = url.toString();
+  }
+})();
