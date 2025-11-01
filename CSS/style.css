@@ -97,11 +97,6 @@ body {
   border: 0;
 }
 
-.text-img1 button:hover {
-  outline: #bfbfbf 3px solid;
-  transform: scale(105%);
-  /* font-size: 0.6em; */
-}
 .text-img1 button:active {
   outline: var(--color-text) 2px solid;
   transform: scale(102%);
@@ -180,10 +175,6 @@ body {
   align-items: center;
 }
 
-.card button:hover {
-  background-color: #d1cece;
-  transform: scale(105%);
-}
 .card button:active {
   background-color: #ebebeb;
 }
@@ -399,10 +390,6 @@ body {
   transition: 0.3s;
 }
 
-.social-text button:hover {
-  outline: solid 4px rgb(27, 27, 27);
-  transform: scale(105%);
-}
 .social-text button:active {
   outline: solid 2px rgb(27, 27, 27);
   transform: scale(103%);
@@ -464,18 +451,11 @@ body {
 .list-header {
   transition: 0.3s ease;
 }
-.list-header li:hover {
-  border-bottom: #bfbfbf solid 2px;
-  transform: scale(105%);
-}
+
 .list-header li:active {
   border-bottom: #bfbfbf solid 0px;
 }
 
-.list-header li:nth-child(4):hover {
-  border-bottom: #bfbfbf solid 0px;
-  transform: scale(100%);
-}
 .button-burger {
   display: none;
 }
@@ -605,8 +585,28 @@ body {
   }
 }
 
-@media (any-hover: none) {
-  *:hover {
-    all: unset !important;
+@media (hover: hover) and (pointer: fine) {
+  .text-img1 button:hover {
+    outline: #bfbfbf 3px solid;
+    transform: scale(105%);
+    /* font-size: 0.6em; */
+  }
+
+  .card button:hover {
+    background-color: #d1cece;
+    transform: scale(105%);
+  }
+  .social-text button:hover {
+    outline: solid 4px rgb(27, 27, 27);
+    transform: scale(105%);
+  }
+
+  .list-header li:hover {
+    border-bottom: #bfbfbf solid 2px;
+    transform: scale(105%);
+  }
+  .list-header li:nth-child(4):hover {
+    border-bottom: #bfbfbf solid 0px;
+    transform: scale(100%);
   }
 }
